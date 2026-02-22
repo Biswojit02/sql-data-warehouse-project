@@ -56,10 +56,10 @@ Begin
 				trim(cst_firstname) as cst_firstname,
 				trim(cst_lastname) as cst_lastname,
 				case 
-				when upper(trim(cst_material_status)) = 'M' then 'Married'
-				when upper(trim(cst_material_status)) ='S' then 'Single'
+				when upper(trim(cst_marital_status)) = 'M' then 'Married'
+				when upper(trim(cst_marital_status)) ='S' then 'Single'
 				else 'n/a'
-				end as cst_material_status, -- Normalize marital status values to readable format
+				end as cst_marital_status, -- Normalize marital status values to readable format
 				case 
 				when upper(trim(cst_gndr)) = 'M' then 'Male'
 				when upper(trim(cst_gndr)) ='F' then 'Female'
